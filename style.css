@@ -1,0 +1,79 @@
+/* To align Table title and clear btn */
+.align-div{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.align-h{
+    float: left;
+    position: absolute;
+    left: 0;
+}
+.align-b{
+    float: right;
+    position: absolute; 
+    right: 0;
+}
+/* To align Table title and clear btn Till Here */
+
+/* To Align Search Bar in Center and Its Style */
+#items .container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.searchContent{
+    position: relative;
+    max-width: 980px;
+    width: 500px;
+    text-align: center;
+    padding-top:0px ;
+    float: left;
+}
+.d-flex{
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+}
+.d-flex input{
+    flex: 1;
+    padding: 0 20px;
+    font-size: 18px;
+}
+/* To Align Search Bar in Center and Its Style Till Here */
+
+
+/* CSS of ToDos List Adding Item Form*/
+/* Popup Form*/
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+/* Contains Form */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+/* Icon To close Form inside Anchor tag */
+.close-form{
+    position: absolute;
+    float: right;
+    right: 0;
+    padding-right: 4px;
+    cursor: pointer;
+}
+/* Button To Add Item Into ToDos List And Its Hover CSS */
+.addList{
+    opacity: 0.8;
+}
+.form-container .addList:hover{
+opacity: 1;
+}
+/* CSS of ToDos List Adding Item Form Till Here */
