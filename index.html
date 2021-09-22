@@ -61,68 +61,69 @@
           </div>
         </div>
       </nav>
-    <!-- Navigation Ends Here -->
-
-    <div class="container my-4">
+      <!-- Navigation Ends Here -->
+      
+      <div class="container my-4">
         <h2 class="text-center">Today's Work List</h2>
         
         <div class="form-popup" id="AddItemForm">
-        <div class="form-container">
-        <div class="form mb-3">
-            <label for="title" class="form-label">Title</label>
-            <a onclick="closeForm(); return false;"><i class="fas fa-times close-form"></i></a>
+          <div class="form-container">
+            <div class="form mb-3">
+              <label for="title" class="form-label">Title</label>
+              <a onclick="closeForm(); return false;"><i class="fas fa-times close-form"></i></a>
             <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
             <div class="form-text">Add an Item to your Today's List</div>
-        </div>
+          </div>
         <div class="mb-3">
             <label for="description" class="form-label">Description</label>
             <textarea class="form-control" id="description" rows="3"></textarea>
+          </div>
+          <!-- <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div> -->
+          <button id="addItem" onclick="GettingList()" class="btn btn-primary addList">Add To List</button>
         </div>
-        <!-- <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div> -->
-        <button id="addItem" onclick="GettingList()" class="btn btn-primary addList">Add To List</button>
-        </div>
+      </div>
+      
+      <div id="items" class="my-4">
+        <div class="align-div">
+          <h2 class="align-h">Your Items</h2>
+          <button class="btn btn-primary align-b" onclick="clearList()">Clear List</button>
         </div>
         
-        <div id="items" class="my-4">
-            <div class="align-div">
-                <h2 class="align-h">Your Items</h2>
-                <button class="btn btn-primary align-b" onclick="clearList()">Clear List</button>
+        <div class="container">
+          <div class="searchContent my-3">
+            <div class="d-flex">
+              <input id="tableSearch" class="form-control me-2" onkeyup="search()" type="text" placeholder="&#x270e; Search Your Title"
+              aria-label="Search">
             </div>
-            
-            <div class="container">
-                <div class="searchContent my-3">
-                <div class="d-flex">
-                    <input id="tableSearch" class="form-control me-2" onkeyup="search()" type="text" placeholder="&#x270e; Search Your Title"
-                        aria-label="Search">
-                </div>
-            </div>
-            </div>
-
-            <table class="table" id="myTable">
-                <thead>
-                    <tr>
-                        <th scope="col">S.No.</th>
-                        <th scope="col">Title</th>
-                        <th scope="col">Description</th>
-                        <th scope="col">Action</th>
-                    </tr>
-                </thead>
-                <tbody id="Tbody">
-                    <tr>
-                        <th scope="row" id="ok">1</th>
-                        <td>Get Some Coffee</td>
-                        <td>You need coffee as you are coder</td>
-                        <td><button class="btn btn-sm btn-primary">Delete</button></td>
-                    </tr>
-
-                </tbody>
-            </table>
+          </div>
         </div>
-
-
+        
+        <table class="table" id="myTable">
+          <thead>
+            <tr>
+              <th scope="col">S.No.</th>
+              <th scope="col">Title</th>
+              <th scope="col">Description</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody id="Tbody">
+            <tr>
+              <th scope="row" id="ok">1</th>
+              <td>Get Some Coffee</td>
+              <td>You need coffee as you are coder</td>
+              <td><button class="btn btn-sm btn-primary">Delete</button></td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      <div class="container btn-cont">
+      <button class="btn btn-primary btn-align" onclick="openForm()">Add Item To your Today's List</button>
+      </div>
     </div>
 
 

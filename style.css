@@ -77,3 +77,11 @@
 opacity: 1;
 }
 /* CSS of ToDos List Adding Item Form Till Here */
+
+.btn-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+}
